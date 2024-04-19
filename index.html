@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabio's Personal Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!-- :wght@300 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><b>FS</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="blogposts.html">Blogposts</a>
+      </li>
+      
+      <!--
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="...">CV</a>
+        -->
+      </li>
+    </ul>
+    <div class="ml-auto">
+        <div id="themeToggle" class="theme-icon">
+            <i class="far fa-sun"></i>
+        </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Content -->
+<div class="container my-5">
+    <div class="row align-items-center">
+        <!-- Profile Image -->
+        <div class="col-md-5">
+            <img src="resources/img/index/photo.jpg" alt="Your Name" class="img-fluid rounded-circle">
+        </div>
+        <!-- Bio -->
+        <div class="col-md-7">
+            <div class="bio">
+                <h2> 🤙 Hi, I'm Fabio Salerno!</h2>
+                I’m a MSc Data Science student at the University of Milano Bicocca. 
+                As a Visiting Student Researcher at TU Delft I am working on memorization, interpretability and reasoning of LLMs for software engineering tasks (LLM for code).
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="mt-4 d-flex justify-content-center">
+                <a href="https://www.linkedin.com/in/fabiosalern/" class="btn btn-outline-secondary mx-1" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/fabiosalern" class="btn btn-outline-secondary mx-1" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://github.com/fabiosalern" class="btn btn-outline-secondary mx-1" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <!--
+                <a href="https://www.kaggle.com/your_username" class="btn btn-outline-secondary mx-1" target="_blank">
+                    <i class="fab fa-kaggle"></i>
+                </a>
+                -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Recent Works Section -->
+<div class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Left Side: Title -->
+            <div class="col-md-4">
+                <h2><b>Recent Works</b></h2>
+            </div>
+            <div class="col-md-8">
+
+            <!--
+                <div class="row mb-5">
+                    
+                    <div class="col-md-13">
+                        <h4>📝 TITLE</h4>
+                        <p>Description...</p>
+                        <a href="LINK" class="btn btn-sm btn-outline-secondary">Read Blog</a>
+                    </div>
+                </div>
+                -->
+
+                <div class="row mb-5">
+                    <div class="col-md-13">
+                        <h4>📝 Decomposing the TextRank algorithm</h4>
+                        <p>Extractive methods aim to condense articles by choosing a subset of words that capture the essential information...</p>
+                        <a href="https://medium.com/@fabiosalern/decomposing-the-textrank-algorithm-to-grasp-the-main-idea-behind-it-code-implementation-b29414eba821" class="btn btn-sm btn-outline-secondary">Read Blog</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
+

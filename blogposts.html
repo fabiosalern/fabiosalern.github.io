@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabio's Personal Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><b>FS</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <!--
+        <li class="nav-item">
+          <a class="nav-link" href="paper-reviews.html">Paper Reviews</a>
+        </li>
+        -->
+        <li class="nav-item">
+          <a class="nav-link" href="blogposts.html">Blogposts</a>
+        </li>
+      </ul>
+      <div class="ml-auto">
+        <div id="themeToggle" class="theme-icon">
+            <i class="far fa-sun"></i>
+        </div>
+    </div>
+    </div>
+  </nav>
+
+<!-- Blogposts Content -->
+<div class="container my-5">
+
+    <!-- Title, Description, and Search Bar -->
+    <header class="mb-4">
+        <h1>📝 Blogposts</h1>
+        <p>
+            Here you can find all the blog posts I've written! They vary in a wide range of topics and can be filtered by clicking on the keywords. 
+        </p>
+        <div class="input-group">
+            <input type="text" id="searchBlog" class="form-control" placeholder="Search blogposts...">
+            <div class="input-group-append">
+                <button id="clearSearch" class="btn btn-outline-secondary" type="button">X</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="hiddenBlogpostContainer" style="display: none;"></div>
+
+    <!-- Blogposts Displayed as Cards -->
+    <div class="row" id="blogpostCards">
+
+        <!-- Example Card (Repeat for each blogpost) -->
+        <div class="col-md-4 mb-4" data-id="1">
+            <div class="card">
+                <img src="resources/img/reviews/trank.png" class="card-img-top" alt="Blogpost Image">
+                <div class="card-body">
+                    <h5 class="card-title">Decomposing the TextRank algorithm</h5>
+                    <div class="card-text">
+                        Extractive methods aim to condense articles by choosing a subset of words that capture the essential information...
+                    </div>
+                    <div class="tags">
+                        <a href="#" class="tag badge badge-danger" onclick="filterByTag('NLP');">NLP</a>
+                        <a href="#" class="tag badge badge-secondary" onclick="filterByTag('Summarization');">Summarization</a>
+
+                    </div>
+                    <a target="_blank" href="https://medium.com/@fabiosalern/decomposing-the-textrank-algorithm-to-grasp-the-main-idea-behind-it-code-implementation-b29414eba821" class="btn btn-outline-dark">Read on Medium</a>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="col-md-4 mb-4" data-id="2">
+            <div class="card">
+                <img src="resources/img/reviews/..." class="card-img-top" alt="Blogpost Image">
+                <div class="card-body">
+                    <h5 class="card-title">titles</h5>
+                    <div class="card-text">
+                        ...
+                    </div>
+                    <div class="tags">
+                        <a href="#" class="tag badge badge-primary" onclick="filterByTag('...');">...</a>
+                        <a href="#" class="tag badge badge-warning" onclick="filterByTag('...'); ">...</a>
+                    </div>
+                    <a target="_blank" href="..." class="btn btn-outline-dark">Read on Medium</a>
+                </div>
+            </div>
+        </div>
+        -->
+        <!-- Add cards here! -->
+    </div>
+    <!-- Add more rows here! -->
+
+    <!-- TAGS: 
+        NLP: <a href="#" class="tag badge badge-primary" onclick="filterByTag('NLP');">NLP</a>
+        Code:  <a href="#" class="tag badge badge-secondary" onclick="filterByTag('Code');">Code</a>
+        Alignment: <a href="#" class="tag badge badge-warning" onclick="filterByTag('Interpretability'); ">Interpretability</a>
+        Bayesian: <a href="#" class="tag badge badge-danger" onclick="filterByTag('Bayesian');">Bayesian</a>
+        warning : Interpretability
+        info : 
+    -->
+    
+</div>
+
+<!-- Bootstrap JS, Popper.js, and Custom JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/blogSearch.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+</html>

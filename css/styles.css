@@ -1,0 +1,295 @@
+/* Default Theme */
+:root {
+    --primary-bg-color: #FFFFFF; /* White */
+    --primary-text-color: #000000; /* Black */
+    --secondary-bg-color: #F5F5F5; /* Light Grey (for navbar and recent works) */
+    --secondary-text-color: #333333; /* Darker text color for contrast on light grey */
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --primary-bg-color: #121212; /* Near Black */
+    --primary-text-color: #FFFFFF; /* White */
+    --secondary-bg-color: #2D2D2D; /* Dark Grey */
+    --secondary-text-color: #E0E0E0; /* Lighter text color for contrast on dark grey */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--secondary-bg-color) !important;
+}
+
+.navbar-brand {
+    color: var(--secondary-text-color) !important;
+}
+
+.navbar .nav-link {
+    color: var(--secondary-text-color) !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--primary-text-color) !important;
+}
+
+.bg-light {
+    background-color: var(--secondary-bg-color) !important;
+    color: var(--secondary-text-color) !important;
+}
+
+header {
+    text-align: center;
+}
+
+nav.navbar {
+    margin-bottom: 50px;
+}
+
+.col-md-5 > img {
+    width: 300px;
+    height: 300px;
+}
+
+
+/* Style for Bio */
+.col-md-7 h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.col-md-7 p {
+    font-size: 18px;
+}
+
+.tags {
+    padding-bottom: 20px;
+}
+
+.bio {
+    text-align: center;
+	line-height: 1.7;
+}
+
+.my-5 {
+    padding-bottom: 10px;
+}
+
+.py-5 .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.theme-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--primary-text-color);
+    padding: 0 10px;
+}
+
+.social-media-buttons .btn {
+    color: white; /* Sets the text/icon color to white */
+    border: 2px solid white; /* Optional: sets the border color to white */
+}
+.social-media-buttons .btn:hover {
+    background-color: white; /* Color when hovered */
+    color: #cb444a; /* Change to your desired hover text/icon color */
+}
+
+.social-media-buttons-sec .btn {
+    color: #28a745; /* Sets the text/icon color to #28a745 */
+    border: 2px solid #28a745; /* Optional: sets the border color to #28a745 */
+}
+.social-media-buttons-sec .btn:hover {
+    background-color: #28a745; /* Color when hovered */
+    color: white; /* Change to your desired hover text/icon color */
+}
+
+#datapizza {
+    color: white; /* Change to your desired hover text/icon color */
+}
+
+
+/* Style for Icons */
+[data-theme="dark"] .fa, [data-theme="dark"] .fab, [data-theme="dark"] .fas {
+    color: var(--secondary-text-color) !important;
+}
+
+/* Style for Table */
+[data-theme="dark"] .table thead th {
+    background-color: var(--secondary-bg-color) !important;
+    color: var(--primary-text-color) !important;
+}
+
+[data-theme="dark"] .table tbody tr:nth-child(odd) {
+    background-color: #2D2D2D !important;  /* or any color you want for odd rows */
+    color: var(--primary-text-color) !important;
+}
+
+[data-theme="dark"] .table tbody tr:nth-child(even) {
+    background-color: #3E3E3E !important;  /* or any color you want for even rows */
+    color: var(--primary-text-color) !important;
+}
+
+[data-theme="dark"] .card {
+    background-color: var(--secondary-bg-color) !important;
+    color: var(--primary-text-color) !important;
+}
+
+/* Style for Cards */
+[data-theme="dark"] .card a, [data-theme="dark"] .card a:hover {
+    color: var(--primary-text-color) !important;
+}
+
+/* Style for Search bar */
+[data-theme="dark"] input[type="text"] {
+    background-color: #2D2D2D !important; /* Darker than usual */
+    color: var(--primary-text-color) !important;
+    border-color: #3E3E3E !important;  /* Border a bit lighter than the background for contrast */
+}
+
+[data-theme="dark"] input[type="text"]::placeholder {
+    color: #8C8C8C;  /* This is a light gray. Adjust the color value as needed. */
+    opacity: 1;  /* This makes sure the color is applied as-is without any opacity */
+}
+
+[data-theme="dark"] .btn-dark {
+    background-color: #737373;  /* This is a light gray for the background. Adjust as needed. */
+    color: #E0E0E0;  /* This is a light color for the text. Adjust as needed. */
+}
+
+[data-theme="dark"] .btn-outline-secondary {
+    color: var(--primary-text-color) !important;  /* This is a light color for the text. Adjust as needed. */
+}
+
+[data-theme="dark"] .btn-outline-dark {
+    border-color: #8C8C8C !important;  /* This is a light color for the text. Adjust as needed. */
+}
+
+[data-theme="dark"] .btn-outline-dark:hover {
+    background-color: #8C8C8C !important;  /* This is a light color for the text. Adjust as needed. */
+}
+
+[data-theme="dark"] .navbar-toggler {
+    background-color: #737373 !important;
+}
+
+[data-theme="dark"] .social-media-buttons .btn {
+    color: white !important; /* Sets the text/icon color to white */
+    border: 2px solid white !important; /* Optional: sets the border color to white */
+}
+[data-theme="dark"] .social-media-buttons .btn:hover {
+    background-color: white !important; /* Color when hovered */
+    color: #cb444a !important; /* Change to your desired hover text/icon color */
+}
+
+[data-theme="dark"] .social-media-buttons-sec .btn {
+    color: white !important; /* Sets the text/icon color to #28a745 */
+    border: 2px solid #28a745 !important; /* Optional: sets the border color to #28a745 */
+}
+[data-theme="dark"] .social-media-buttons-sec .btn:hover {
+    background-color: #28a745 !important; /* Color when hovered */
+    color: white !important; /* Change to your desired hover text/icon color */
+}
+
+@media (max-width: 768px) {  /* adjust breakpoint as needed */
+
+    .col-md-5, .col-md-7 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .col-md-8, .col-md-4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    h2, h4 {
+        font-size: 1.5rem;
+    }
+
+    .col-md-7 p {
+        font-size: 16px;
+    }
+
+    .btn, .theme-icon {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .col-md-5 {
+        margin-bottom: 20px;
+    }
+
+    .col-md-4 {
+        margin-top: 20px;
+    }
+
+    #themeToggle {
+        position: fixed; 
+        bottom: 10px; 
+        right: 10px;
+        z-index: 1000; /* make sure it's above other content */
+    }
+	
+	.img-fluid.rounded-circle {
+    max-width: 70%; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+	
+}
+
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    line-height: 1.7;
+}
+
+@media (max-width: 575px) {  
+html {font-size:14px;}
+	
+p {
+	line-height: 1.7;
+	font-size: 16px;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	}
+	
+b {
+	font-size: 30px;
+	}	
+	
+ h2, h4 {
+     font-size: 23px;
+	 margin-left: 1rem;
+	 margin-right: 1rem;
+	 margin-bottom: 1rem;
+    }	
+
+.bio {
+        font-size: 16px;
+    }	
+
+.btn, .theme-icon {
+        font-size: 1rem;
+        padding: 10px 5px;
+		margin-left: 15px;
+    }
+	
+	.img-fluid.rounded-circle {
+    max-width: 30%; 
+	max-height: 40%	
+}
+	
+img.img-fluid {
+    height: 100px;
+	align-items: center;
+	margin-top: 30px;
+}
